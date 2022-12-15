@@ -9,8 +9,9 @@ export const getTransactionData = createAsyncThunk(
             const request = await axios.get('/api/swap/getTransactions')
             const data = await request.data
             const reversedData = []
-            while(data.length) {
-                reversedData.push(data.pop())
+            console.log(data)
+            for (let i = data.length-1; i >=0; i--) {
+                reversedData.push(data[i])
             }
             return reversedData
 
