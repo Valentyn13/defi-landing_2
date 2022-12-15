@@ -1,19 +1,21 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-
+function reverser (arr) {
+    const reversedData = []
+    for (let i = arr.length-1; i >=0; i--) {
+        reversedData.push(arr[i])
+    }
+    return reversedData
+}
 export const getTransactionData = createAsyncThunk(
     'getTransactions/getTransactionData',
     async (_, {rejectWithValue}) => {
         try {
             const request = await axios.get('/api/swap/getTransactions')
             const data = await request.data
-            const reversedData = []
-            console.log(data)
-            for (let i = data.length-1; i >=0; i--) {
-                reversedData.push(data[i])
-            }
-            return reversedData
+            const valid = reverser(data)
+            return valid
 
           } catch (error) {
             console.log(error)
