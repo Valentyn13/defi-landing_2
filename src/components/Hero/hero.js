@@ -13,7 +13,7 @@ const Hero = () => {
             </video>
             <div className="hero-text">
                 <h1>Decentralized</h1>
-                <h1><span className="blue">Trading </span> Protocol</h1>
+                <h2><span className="blue">Trading </span> Protocol</h2>
                 <p>Guaranteed liquidity trading for millions of users and top Ethereum applications.</p>
                 <div className="btn-group">
                     <Link  className="btn">Use Defi</Link>

@@ -7,7 +7,6 @@
 
 .container {
     max-width: 1200px;
-    padding: 0 2rem;
 }
 .main-content {
     margin: 0 auto;
@@ -29,6 +28,7 @@
 .header-text h1 {
     font-size: 4rem;
     color: aliceblue;
+    margin-left: 1rem;
 }
 
 .header-text p {

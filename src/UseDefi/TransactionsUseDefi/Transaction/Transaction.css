@@ -37,7 +37,7 @@
 
 @media screen and (max-width:475px) {
     .fetch-transaction {
-        width: auto;
+        width: 90%;
     }
     .trn-elment{
         width: 50%;
