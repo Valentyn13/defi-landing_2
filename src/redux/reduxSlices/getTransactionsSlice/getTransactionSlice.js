@@ -19,7 +19,6 @@ export const getTransactionData = createAsyncThunk(
 
           } catch (error) {
             console.log(error)
-            return rejectWithValue(error.message)
           }
     }
 )
