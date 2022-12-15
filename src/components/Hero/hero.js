@@ -16,7 +16,7 @@ const Hero = () => {
                 <h2><span className="blue">Trading </span> Protocol</h2>
                 <p>Guaranteed liquidity trading for millions of users and top Ethereum applications.</p>
                 <div className="btn-group">
-                    <Link  className="btn">Use Defi</Link>
+                    <Link to='use' className="btn">Use Defi</Link>
                     <button className="btn btn-outline">Documentation</button>
                     <button className="btn btn-outline">FAQ</button>
                 </div>
