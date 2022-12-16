@@ -10,6 +10,8 @@ Clone this repository
 ### Step two:
 Go to the cloned project folder and run the following command:
 
+`npm i`
+
  `npm run dev`
  
 This command include `npm run client` and `npm run server` commands, 
