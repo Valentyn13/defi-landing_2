@@ -20,7 +20,6 @@
 .modal-content {
     padding: 1.5rem;
     border-radius: 0.8rem;
-    /* height: 200px; */
     width: 400px;
     background-color: aliceblue;
     transition: 0.5s all;
@@ -30,28 +29,55 @@
 }
 .modal-header {
     align-self: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 .modal-sell-detail {
     align-self: flex-start;
-    margin: .2rem;
     padding: .2rem;
+    width: 90%;
+    margin: .2rem auto 1rem auto;
+    background-color: rgba(39, 84, 218, 0.705);
+}
+ .modal-bottom .modal-input {
+    width: 300px;
+    height: 45px;
+    margin: 0 auto 1rem auto;
+    padding: .4rem;
+    display: block;
+}
+.modal-button {
+  display: block;
+  border: 1px solid black;
+}
+.modal-cancel-btn {
+    width: 70px;
+    padding: .3rem;
+    background-color: red;
+    height: 30px;
+}
+.modal-btn-controll {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .modal-network {
-    align-self: center;
+    align-self: flex-start;
+    font-size: 1.2rem;
+    width: 90%;
+    margin:0 auto 0.5rem auto ;
 }
 .modal-buy-detail {
     align-self: flex-start;
-    margin: 1rem .2;
+    width: 90%;
+    margin: 0 auto 2rem auto;
     padding: .2rem;
+    background-color: rgba(238, 240, 133, 0.842);
 }
 .modal-bottom {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
     margin-top: 1rem;
     padding: .4rem;
-    height: 60px;
     justify-content: space-between;
 
 }

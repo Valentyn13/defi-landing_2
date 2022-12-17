@@ -106,19 +106,23 @@ useEffect(() => {
                               } } className='btn'>Confirm operation</button>
                               <Modal active={confirmOperation}>
                               <div className='modal-header'>Transaction detail</div>
+                              <hr/>
                               <div className='modal-network'>Network:{selected}</div>
                               <div className='modal-sell-detail'>
                                 <div>Sell: {selectedCoinToSwap.name}</div>
-                                <div>Amount:{amount}</div>
-                                <div>Price:{amount * selectedCoinToSwap.current_price}</div>
+                                <div>Amount: {amount}</div>
+                                <div>Price: {amount * selectedCoinToSwap.current_price}</div>
                               </div>
                               <div className='modal-buy-detail'>
                                 <div>Buy: {coinToBuy.name}</div>
-                                <div>Amount:{((selectedCoinToSwap.current_price / coinToBuy.current_price)*amount).toFixed(2)}</div>
+                                <div>Amount: {((selectedCoinToSwap.current_price / coinToBuy.current_price)*amount).toFixed(2)}</div>
                               </div>
                               <div className='modal-bottom'>
-                                <input type="number" value={toWallet} placeholder="Enter wallet adress" onChange={(e) => setToWallet(e.target.value)}/>
-                                <button onClick={handleCompleteBtn}>Complete</button>
+                                <input className='modal-input' type="number" value={toWallet} placeholder="Enter wallet adress" onChange={(e) => setToWallet(e.target.value)}/>
+                                <div className='modal-btn-controll'>
+                                <button className='modal-button btn' onClick={handleCompleteBtn}>Complete</button>
+                                <button className='modal-cancel-btn' onClick={()=> setConfirmOperation(false)}>cancel</button>
+                                </div>
                               </div>
                             </Modal>
                             </div>

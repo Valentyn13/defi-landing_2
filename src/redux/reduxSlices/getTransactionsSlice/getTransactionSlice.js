@@ -14,8 +14,8 @@ export const getTransactionData = createAsyncThunk(
         try {
             const request = await axios.get('/api/swap/getTransactions')
             const data = await request.data
-            const valid = reverser(data)
-            return valid
+            // const valid = reverser(data)
+            return data
 
           } catch (error) {
             console.log(error)
@@ -35,8 +35,9 @@ export const getTransactionSlice = createSlice({
         },
         [getTransactionData.fulfilled] : (state, action) => {
             state.status = 'fulfiled'
-            state.data = action.payload
-            // console.log(state.data)
+            const data = reverser(action.payload)
+            state.data = data
+            console.log(data)
         },
         [getTransactionData.rejected] : (state, action) => {
             state.status = 'rejected'
