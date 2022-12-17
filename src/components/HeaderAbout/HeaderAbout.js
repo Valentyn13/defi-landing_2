@@ -8,8 +8,8 @@ const HeaderAbout = () => {
                 <div className="header-section">
                     <div className="header-section-content">
                         <h1>Contributors</h1>
-                        <p className="bold-text">Efficiency in decentralized finance is just 1inch away</p>
-                        <p className="text">1inch offers the most innovative solutions in the DeFi space, focusing primarily on security, speed and efficiency.</p>
+                        <p className="bold-text">Efficiency in decentralized finance is just Defi away</p>
+                        <p className="text">Our Dapp offers the most innovative solutions in the Crypto space, focusing primarily on security, speed and efficiency.</p>
                     </div>
                     <img className="header-img" src={headerImg} alt="Uuups..." />
                 </div>

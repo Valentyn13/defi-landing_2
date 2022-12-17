@@ -40,7 +40,7 @@ const ContentPlatform = () => {
                         <div className="content-text">
                         <h4>Never ending <br/>Liquidity</h4>
                         <div>
-                        1inch instantly analyzes thousands of quotes and fees across
+                        Defi app instantly analyzes thousands of quotes and fees across
                         <br/>
                          multiple DEXes to provide users with the best rates.
                         </div>

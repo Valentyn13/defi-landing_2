@@ -8,10 +8,10 @@ const  HeaderCommunity = () => {
                 <div className="main-content">
                     <div className="header-text">
                         <h1>
-                            Solana<br/>
+                            Defi<br/>
                             Community
                         </h1>
-                        <p>The Solana community is a globally distributed home to developers, token holders, validators, and members supporting the protocol.</p>
+                        <p>Our Defi community is a globally distributed home to developers, token holders, validators, and members supporting the protocol.</p>
                     </div>
                     <div className="header-image">
                         <img src={H_img} alt='Some problems :('/>

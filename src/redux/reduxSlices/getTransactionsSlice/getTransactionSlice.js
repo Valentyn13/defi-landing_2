@@ -36,7 +36,7 @@ export const getTransactionSlice = createSlice({
         [getTransactionData.fulfilled] : (state, action) => {
             state.status = 'fulfiled'
             state.data = action.payload
-            console.log(state.data)
+            // console.log(state.data)
         },
         [getTransactionData.rejected] : (state, action) => {
             state.status = 'rejected'

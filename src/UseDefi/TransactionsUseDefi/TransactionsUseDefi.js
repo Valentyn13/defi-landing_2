@@ -4,6 +4,7 @@ import Transaction from './Transaction/Transaction'
 import './TransactionsUseDefi.css'
 import { getTransactionData } from '../../redux/reduxSlices/getTransactionsSlice/getTransactionSlice'
 import LoadPage from '../../components/Loadpage/LoadPage'
+import ErrorPage from '../../components/ErrorPage/ErrorPage'
 
 const TransactionsUseDefi = () => {
 const dispatch = useDispatch()
@@ -18,6 +19,15 @@ const getTransactionsStatus = useSelector((state) => state.getTransactions.statu
       <div className='container'>
           <div className='transactions-container'>
             {getTransactionsStatus === 'pending' && <LoadPage/>}
+            {getTransactionsStatus === 'rejected' && 
+            <ErrorPage>
+                <h1>
+                    404 error
+                </h1>
+                <h2>This page doesn't exist</h2>
+                <div>It's a problem with our server, we solve this problem as soon as possible</div>
+            </ErrorPage>
+            }
             <div className='trn-header-text'>Your Transactions</div>
             {
              getTransactions.map((data) => {
