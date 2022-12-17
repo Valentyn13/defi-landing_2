@@ -8,7 +8,9 @@ Clone this repository
 `git clone https://github.com/Valentyn13/defi-landing_2.git`
 
 ### Step two:
-Go to the cloned project folder and run the following command:
+Go to the cloned project folder and run the following commands:
+
+`npm i`
 
  `npm run dev`
  
