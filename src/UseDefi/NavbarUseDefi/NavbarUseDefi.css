@@ -21,13 +21,17 @@
     cursor: pointer;
     border-radius: 15px;
 }
+
 .option-dropdown-button{
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
 }
-.use-link-wrapper {
-    width:calc(33% - 6px) ;
+.use-link-wraper:hover {
+    background-color: #748ea3;
+    transform: scale(1.1);
+transition: 0.2s;
+display: block;
 }
 .use-nav-link {
     color:aliceblue;
@@ -41,11 +45,6 @@
     padding: 6px 16px;
     font-size: 0.8125rem;
 }
-.use-nav-link:hover {
-    text-shadow: 2px -1px 3px white;
-    font-size: 0.8725rem;
-}
-
 
 .glide-link-container {
     position: absolute;
