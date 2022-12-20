@@ -12,7 +12,7 @@ export const getTransactionData = createAsyncThunk(
     'getTransactions/getTransactionData',
     async (_, {rejectWithValue}) => {
         try {
-            const request = await axios.get('/api/swap/getTransactions')
+            const request = await axios.get('/getTransactions')
             const data = await request.data
             // const valid = reverser(data)
             return data

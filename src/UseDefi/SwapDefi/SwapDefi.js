@@ -42,7 +42,7 @@ useEffect(() => {
     setConfirmOperation(false)
     setToWallet('')
     try {
-      await axios.post('/api/swap/transaction', {
+      await axios.post('/transaction', {
         fromWallet,
         toWallet,
         network,
