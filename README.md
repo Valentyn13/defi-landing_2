@@ -29,3 +29,5 @@ more details you can see in 'package.json' file
 ### `Express`
 
 ### `Mongo DB`
+
+### `CoinGecko API`
