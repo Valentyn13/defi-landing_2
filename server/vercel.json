@@ -10,14 +10,7 @@
         {
             "src": "/(.*)",
             "dest":"main.js"
-    },
-        {
-            "src":"/api/swap/transaction",
-            "dest":"./routes/transaction.route"
-        },
-        {
-            "src":"/api/swap/getTransactions",
-            "dest":"./routes/gerTransaction.route"
-        }
+    }
+
     ]
 }
